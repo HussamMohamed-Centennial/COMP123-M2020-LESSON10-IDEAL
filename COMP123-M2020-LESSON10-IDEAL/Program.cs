@@ -6,17 +6,28 @@ using System.Windows.Forms;
 
 namespace COMP123_M2020_LESSON10_IDEAL
 {
-    static class Program
+    public static class Program
     {
+        public static StartForm startForm;
+        public static MainForm mainForm;
+        public static EndForm endForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
+            
+            Application.EnableVisualStyles();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+
+            startForm = new StartForm();
+            mainForm = new MainForm();
+            endForm = new EndForm();
+
+
+            Application.Run(startForm);
         }
     }
 }

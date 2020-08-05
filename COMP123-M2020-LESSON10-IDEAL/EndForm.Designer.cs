@@ -49,6 +49,7 @@
             this.BackButton.TabIndex = 4;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // EndForm
             // 
@@ -64,6 +65,7 @@
             this.Name = "EndForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "End Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EndForm_FormClosing);
             this.ResumeLayout(false);
 
         }

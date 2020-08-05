@@ -40,6 +40,7 @@
             this.NextButton.TabIndex = 0;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // StratFormLabel
             // 
@@ -49,6 +50,7 @@
             this.StratFormLabel.TabIndex = 1;
             this.StratFormLabel.Text = "Start Form";
             this.StratFormLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            
             // 
             // StartForm
             // 

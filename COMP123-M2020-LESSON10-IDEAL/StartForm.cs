@@ -16,5 +16,13 @@ namespace COMP123_M2020_LESSON10_IDEAL
         {
             InitializeComponent();
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.mainForm.Show();
+            this.Hide();
+        }
+
+        
     }
 }
