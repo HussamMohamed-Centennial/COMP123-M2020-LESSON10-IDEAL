@@ -23,6 +23,9 @@ namespace COMP123_M2020_LESSON10_IDEAL
             this.Hide();
         }
 
-        
+        private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
