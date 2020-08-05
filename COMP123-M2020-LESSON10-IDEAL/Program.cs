@@ -12,6 +12,7 @@ namespace COMP123_M2020_LESSON10_IDEAL
         public static MainForm mainForm;
         public static EndForm endForm;
         public static SplashForm splashForm;
+        public static Contact contact;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -27,6 +28,7 @@ namespace COMP123_M2020_LESSON10_IDEAL
             startForm = new StartForm();
             mainForm = new MainForm();
             endForm = new EndForm();
+            contact = new Contact();
 
 
             Application.Run(splashForm);
