@@ -19,8 +19,8 @@ namespace COMP123_M2020_LESSON10_IDEAL
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-
-
+            SetContactData();
+            ClearFormData();
             Program.mainForm.Show();
             this.Hide();
         }
@@ -28,11 +28,6 @@ namespace COMP123_M2020_LESSON10_IDEAL
         private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void StartForm_Load(object sender, EventArgs e)
-        {
-            NextButton.Enabled = false;
         }
 
         private void FirstNameTextBox_Leave(object sender, EventArgs e)
@@ -82,6 +77,27 @@ namespace COMP123_M2020_LESSON10_IDEAL
                 NextButton.Enabled = true;
             }
 
+        }
+
+        private void SetContactData()
+        {
+            Program.contact.FirstName = FirstNameTextBox.Text;
+            Program.contact.LastName = LastNameTextBox.Text;
+            Program.contact.EmailAddress = EmailAdrTextBox.Text;
+            Program.contact.ContactNumber = ContactNumberTextBox.Text;
+        }
+
+        private void ClearFormData()
+        {
+            FirstNameTextBox.Clear();
+            LastNameTextBox.Clear();
+            EmailAdrTextBox.Clear();
+            ContactNumberTextBox.Clear();
+        }
+
+        private void StartForm_Activated(object sender, EventArgs e)
+        {
+            NextButton.Enabled = false;
         }
     }
 }

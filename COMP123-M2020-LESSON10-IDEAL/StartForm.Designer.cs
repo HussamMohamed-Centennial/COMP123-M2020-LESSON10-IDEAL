@@ -150,8 +150,8 @@
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";
+            this.Activated += new System.EventHandler(this.StartForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StartForm_FormClosing);
-            this.Load += new System.EventHandler(this.StartForm_Load);
             this.ContactGroupBox.ResumeLayout(false);
             this.ContactGroupBox.PerformLayout();
             this.ResumeLayout(false);
