@@ -59,7 +59,7 @@ namespace COMP123_M2020_LESSON10_IDEAL
             {
                 StreamReader streamReader = new StreamReader(ContactInfoOopenFileDialog1.FileName);
                 SetContactData(streamReader);
-
+                ShowContactdata();
                 streamReader.Close();
             }
         }

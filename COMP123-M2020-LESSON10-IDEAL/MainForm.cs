@@ -81,5 +81,21 @@ namespace COMP123_M2020_LESSON10_IDEAL
                streamWriter.Close();
             }
         }
+
+        private void MainForm_Activated(object sender, EventArgs e)
+        {
+            FirstNameTextBox.Text = Program.contact.FirstName;
+            LastNameTextBox.Text = Program.contact.LastName;
+            EmailAdrTextBox.Text = Program.contact.EmailAddress;
+            ContactNumberTextBox.Text = Program.contact.ContactNumber;
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            FirstNameTextBox.Enabled = true;
+            LastNameTextBox.Enabled = true;
+            EmailAdrTextBox.Enabled = true;
+            ContactNumberTextBox.Enabled = true;
+        }
     }
 }

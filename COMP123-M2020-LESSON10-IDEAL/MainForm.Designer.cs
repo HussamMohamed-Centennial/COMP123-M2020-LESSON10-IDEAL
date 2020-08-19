@@ -41,6 +41,7 @@
             this.EmailAdrLabel = new System.Windows.Forms.Label();
             this.LastNameTextBox = new System.Windows.Forms.TextBox();
             this.ContactInfoSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.EditButton = new System.Windows.Forms.Button();
             this.ContactGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,12 +166,23 @@
             this.ContactInfoSaveFileDialog.Filter = "Text files|*.txt|All Files|*.*";
             this.ContactInfoSaveFileDialog.Title = "Save Contact Info";
             // 
+            // EditButton
+            // 
+            this.EditButton.Location = new System.Drawing.Point(462, 218);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(150, 50);
+            this.EditButton.TabIndex = 2;
+            this.EditButton.Text = "Edit";
+            this.EditButton.UseVisualStyleBackColor = true;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
             this.Controls.Add(this.ContactGroupBox);
+            this.Controls.Add(this.EditButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.NextButton);
@@ -181,6 +193,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ContactGroupBox.ResumeLayout(false);
@@ -203,5 +216,6 @@
         private System.Windows.Forms.Label EmailAdrLabel;
         private System.Windows.Forms.TextBox LastNameTextBox;
         private System.Windows.Forms.SaveFileDialog ContactInfoSaveFileDialog;
+        private System.Windows.Forms.Button EditButton;
     }
 }

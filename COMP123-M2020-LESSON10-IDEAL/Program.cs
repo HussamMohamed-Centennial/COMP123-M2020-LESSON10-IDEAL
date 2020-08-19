@@ -8,10 +8,11 @@ namespace COMP123_M2020_LESSON10_IDEAL
 {
     public static class Program
     {
+        public static SplashForm splashForm;
+        public static DashBoardForm dashBoardForm;
         public static StartForm startForm;
         public static MainForm mainForm;
         public static EndForm endForm;
-        public static SplashForm splashForm;
         public static Contact contact;
         /// <summary>
         /// The main entry point for the application.
@@ -25,6 +26,7 @@ namespace COMP123_M2020_LESSON10_IDEAL
             Application.SetCompatibleTextRenderingDefault(false);
 
             splashForm = new SplashForm();
+            dashBoardForm = new DashBoardForm();
             startForm = new StartForm();
             mainForm = new MainForm();
             endForm = new EndForm();
