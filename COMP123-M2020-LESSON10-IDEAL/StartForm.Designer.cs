@@ -38,6 +38,7 @@
             this.ContactNumberLabel = new System.Windows.Forms.Label();
             this.ContactNumberTextBox = new System.Windows.Forms.TextBox();
             this.ContactGroupBox = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.ContactGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,17 +131,27 @@
             this.ContactGroupBox.Controls.Add(this.ContactNumberLabel);
             this.ContactGroupBox.Controls.Add(this.EmailAdrLabel);
             this.ContactGroupBox.Controls.Add(this.LastNameTextBox);
-            this.ContactGroupBox.Location = new System.Drawing.Point(19, 24);
+            this.ContactGroupBox.Location = new System.Drawing.Point(19, 68);
             this.ContactGroupBox.Name = "ContactGroupBox";
             this.ContactGroupBox.Size = new System.Drawing.Size(437, 376);
             this.ContactGroupBox.TabIndex = 3;
             this.ContactGroupBox.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Enter :";
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ContactGroupBox);
             this.Controls.Add(this.NextButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,6 +166,7 @@
             this.ContactGroupBox.ResumeLayout(false);
             this.ContactGroupBox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -170,6 +182,7 @@
         private System.Windows.Forms.Label ContactNumberLabel;
         private System.Windows.Forms.TextBox ContactNumberTextBox;
         private System.Windows.Forms.GroupBox ContactGroupBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
